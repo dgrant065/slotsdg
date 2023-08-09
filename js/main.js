@@ -2,7 +2,7 @@
 
   
   /*----- state variables -----*/
-  let 
+  let winner, score, 
   
   /*----- cached elements  -----*/
 
@@ -11,5 +11,10 @@
 
   /*----- functions -----*/
 
+  init();
+
+  function init() {
+
+  }
 
   
