@@ -17,7 +17,7 @@ const reelSpeed = 100;
  
   
   /*----- event listeners -----*/
-document.querySelector('.info').textContent = items.join(' ');
+// document.querySelector('.info').textContent = items.join(' ');
 document.querySelector('spin-button').addEventListener('click', () => {
     if (!spinning) {
         spinning = true;
@@ -39,16 +39,18 @@ document.querySelector('spin-button').addEventListener('click', () => {
   }
 
   function startSpinning() {
-    
+    const reels = document.querySelectorAll('.reel');
+    const spinDuration = 2000;
+
   }
 
   function getRandomItem() {
     return items[Math.floor(Math.random() * items.length)];
   }
 
-  function handleSpin(evt) {
-    console.log(evt.target.tagName)
-  }
+//   function handleSpin(evt) {
+//     console.log(evt.target.tagName)
+//   }
 
   function render() {
 
