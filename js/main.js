@@ -1,13 +1,17 @@
 /*----- constants -----*/
-const SLOTS_LOOKUP = {
- 
-}
+const items = [
+    '🍇',
+    '🍉',
+    '🍙',
+    '🍒',
+    '🍍'
+]
+
   
   /*----- state variables -----*/
-  let winner, score, 
+  let winner, score
   
   /*----- cached elements  -----*/
-  const boxes = window.querySelector('.boxes');
   const spinBtn = document.querySelector('#spinner')
   const resetBtn = document.querySelector('#reset')
   
@@ -25,4 +29,15 @@ document.querySelector('#reset').addEventListener('click', init)
 
   }
 
+  function handleSpin(evt) {
+    console.log(evt.target.tagName)
+  }
+
+  function render() {
+
+  }
+
+  function spin() {
+    
+  }
   
