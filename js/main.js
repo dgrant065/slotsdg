@@ -5,19 +5,28 @@ const items = [
     '🍙',
     '🍒',
     '🍍'
-]
+];
+const reelSpeed = 100;
 
   
   /*----- state variables -----*/
   let winner, score
-  
+  let spinning = false;
   /*----- cached elements  -----*/
-  const spinBtn = document.querySelector('#spinner')
-  const resetBtn = document.querySelector('#reset')
+  const spinBtn = document.querySelector('spin-button')
+ 
   
   /*----- event listeners -----*/
-document.querySelector('#spinner').addEventListener('click', spin)
-document.querySelector('#reset').addEventListener('click', init)
+document.querySelector('.info').textContent = items.join(' ');
+document.querySelector('spin-button').addEventListener('click', () => {
+    if (!spinning) {
+        spinning = true;
+        spinBtn.disabled = true;
+        startSpinning();
+        
+    }
+});
+
 
   /*----- functions -----*/
 
@@ -29,6 +38,14 @@ document.querySelector('#reset').addEventListener('click', init)
 
   }
 
+  function startSpinning() {
+    
+  }
+
+  function getRandomItem() {
+    return items[Math.floor(Math.random() * items.length)];
+  }
+
   function handleSpin(evt) {
     console.log(evt.target.tagName)
   }
@@ -38,6 +55,8 @@ document.querySelector('#reset').addEventListener('click', init)
   }
 
   function spin() {
-    
+
+
+
   }
   
