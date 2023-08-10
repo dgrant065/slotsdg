@@ -7,7 +7,9 @@ const SLOTS_LOOKUP = {
   let winner, score, 
   
   /*----- cached elements  -----*/
-  
+  const boxes = window.querySelector('.boxes');
+  const spinBtn = document.querySelector('#spinner')
+  const resetBtn = document.querySelector('#reset')
   
   /*----- event listeners -----*/
 document.querySelector('#spinner').addEventListener('click', spin)
@@ -18,6 +20,8 @@ document.querySelector('#reset').addEventListener('click', init)
   init();
 
   function init() {
+    winner = null;
+    render();
 
   }
 
