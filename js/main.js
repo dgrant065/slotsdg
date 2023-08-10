@@ -14,7 +14,7 @@ const reelSpeed = 100;
   let spinning = false;
   /*----- cached elements  -----*/
   const spinBtn = document.getElementById('spin-button')
- 
+  const messageEls = document.getElementById('messages')
   
   /*----- event listeners -----*/
 document.querySelector('.info').textContent = items.join(' ');
@@ -33,10 +33,15 @@ document.getElementById('spin-button').addEventListener('click', () => {
   init();
 
   function init() {
+    messageEls.innerText = 'Please push button to play!!'
     // winner = null;
     // render();
 
   }
+
+//   function render() {
+//     renderMessage()
+//   }
 
   function getRandomItem() {
     return items[Math.floor(Math.random() * items.length)];
@@ -60,7 +65,19 @@ document.getElementById('spin-button').addEventListener('click', () => {
         });
       }
     }, reelSpeed);
+    checkWin()
   }
+
+  function checkWin() {
+    const reels = document.querySelectorAll('.reel');
+    const symbols = Array.from(reels, (reel) => reel.textContent);
+    if (symbols.every((symbol) => symbol === symbols[0])) {
+        messageEls.innerText = 'Congratulations! You won!';
+      } else {
+        messageEls.innerText = 'Try again! No win this time.';
+      }
+    }
+  
     
 
 
@@ -70,13 +87,13 @@ document.getElementById('spin-button').addEventListener('click', () => {
 //     console.log(evt.target.tagName)
 //   }
 
-  function render() {
+//   function render() {
 
-  }
+//   }
 
-  function spin() {
+//   function spin() {
 
 
 
-  }
+//   }
   

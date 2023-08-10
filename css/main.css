@@ -16,7 +16,17 @@ body {
     background-color: #f0f0f0; 
 }
 
-
+.reel {
+    width: 100px;
+    height: 150px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
 
 
 
@@ -28,4 +38,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   }
+
+  #spin-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
