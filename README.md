@@ -13,6 +13,15 @@ A slots machine is one of the most basic and fundamental forms of modern gamblin
 # ScreenShots
 
 <img src="https://i.gyazo.com/cec538dd2134d8394ab40092b1c194a6.jpg">
+<img src="https://i.gyazo.com/2e5804b0ae9149815d947fa1692f5f7b.jpg">
+
+# Getting Started
+
+Upon rendering the game, player will be prompted to click the "Spin" button to begin gambling
+
+Player can spin until they hit a "JACKPOT!!"
+
+After a jackpot, the player can resume playing by re-clicking the "Spin" button
 
 
 

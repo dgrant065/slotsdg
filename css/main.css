@@ -18,6 +18,15 @@ body {
     background-size: cover;
 }
 
+header {
+    font-size: 60px;
+    color: navajowhite;
+}
+
+h1 {
+    color: darkslateblue;
+}
+
 .reel {
     display: flex;
     flex-direction: row;
