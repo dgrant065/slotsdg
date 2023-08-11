@@ -1,0 +1,19 @@
+# slotsdg
+                                                               <-- Slots PsuedoCode -->
+- set up board with three spinnable slots(maybe arrays)
+
+- allow user to click a button and spin the slots
+
+- allow user to continue clicking until user hits 3 in a row
+
+- once a winning trio is made, allow user to spin again
+
+- check if user won
+
+- create winning functions
+
+- add symbols on slots to spin
+
+- track user win streak until user resets
+
+- 

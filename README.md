@@ -1,22 +1,10 @@
 # slotsdg
-                                                               <-- Slots PsuedoCode -->
-- set up board with three spinnable slots(maybe arrays)
+Fortune Fruits - A casino like slots game with colorful fruits bearing your winnings (the house always wins!!)
+A slots machine is one of the most basic and fundamental forms of modern gambling. Played by inputing a bet amount and spinning a reel, you get a win when you line up 3 of the same images in a row. While gambling can be destructive, it is a great way to interact with other people and make new friends (please gamble responsibly). Colorful pictures and vibrant sounds when you hit a jackpot are a huge reason why many people come back to casinos and spend hours at a slot machine.
 
-- allow user to click a button and spin the slots
+Technologies Used: HTML, CSS and JavaScript
 
-- allow user to continue clicking until user hits 3 in a row
 
-- once a winning trio is made, allow user to spin again
-
-- check if user won
-
-- create winning functions
-
-- add symbols on slots to spin
-
-- track user win streak until user resets
-
-- 
 
 
 

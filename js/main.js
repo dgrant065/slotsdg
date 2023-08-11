@@ -17,7 +17,6 @@ const reelSpeed = 100;
   const messageEls = document.getElementById('messages')
   
   /*----- event listeners -----*/
-document.querySelector('.info').textContent = items.join(' ');
 document.getElementById('spin-button').addEventListener('click', () => {
     if (!spinning) {
         spinning = true;
@@ -33,15 +32,11 @@ document.getElementById('spin-button').addEventListener('click', () => {
   init();
 
   function init() {
-    messageEls.innerText = 'Please push button to play!!'
-    // winner = null;
-    // render();
+    messageEls.innerText = 'Please push button to play!!';
 
   }
 
-//   function render() {
-//     renderMessage()
-//   }
+
 
   function getRandomItem() {
     return items[Math.floor(Math.random() * items.length)];
@@ -65,16 +60,16 @@ document.getElementById('spin-button').addEventListener('click', () => {
         });
       }
     }, reelSpeed);
-    checkWin()
+    setTimeout(checkWin, 2000)
   }
 
   function checkWin() {
     const reels = document.querySelectorAll('.reel');
     const symbols = Array.from(reels, (reel) => reel.textContent);
     if (symbols.every((symbol) => symbol === symbols[0])) {
-        messageEls.innerText = 'Congratulations! You won!';
+        messageEls.innerText = 'JACKPOT!! You Won!!!';
       } else {
-        messageEls.innerText = 'Try again! No win this time.';
+        messageEls.innerText = 'Aww shoot! Better Luck Next Time!!';
       }
     }
   
@@ -83,17 +78,5 @@ document.getElementById('spin-button').addEventListener('click', () => {
 
 
 
-//   function handleSpin(evt) {
-//     console.log(evt.target.tagName)
-//   }
 
-//   function render() {
-
-//   }
-
-//   function spin() {
-
-
-
-//   }
   
