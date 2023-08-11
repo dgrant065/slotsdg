@@ -23,7 +23,7 @@ Player can spin until they hit a "JACKPOT!!"
 
 After a jackpot, the player can resume playing by re-clicking the "Spin" button
 
-
+"  [Play my game here](https://dgrant065.github.io/slotsdg/ "Slots")  " 
 
 
 
